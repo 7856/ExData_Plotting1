@@ -18,7 +18,7 @@ plot(data_subset$Global_active_power ~ data_subset$datetime, type="l",
      ylab="Global Active Power", xlab="")
 
 plot(data_subset$Voltage ~ data_subset$datetime, type="l", 
-     ylab="Voltage", xlab="")
+     ylab="Voltage", xlab="datetime")
 
 plot(data_subset$Sub_metering_1 ~ data_subset$datetime, type="l", 
      ylab="Energy sub metering", xlab="")
@@ -28,6 +28,6 @@ legend("topright", lty=1, bty="n", col=c("black", "red", "blue"),
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 plot(data_subset$Global_reactive_power ~ data_subset$datetime, type="l", 
-     ylab="Global_reactive_power", xlab="")
+     ylab="Global_reactive_power", xlab="datetime")
 
 dev.off()
